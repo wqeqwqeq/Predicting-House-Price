@@ -34,13 +34,14 @@ We add a stack model and average our prediction and improve score
 Averaged base models score: 0.1090 (0.0076)
 
 #### 3.3 Add meta model 
-1.Split the total training set into two disjoint sets (here train and .holdout )
 
-2. Train several base models on the first part (train)
+Split the total training set into two disjoint sets (here train and .holdout )
 
-3. Test these base models on the second part (holdout)
+Train several base models on the first part (train)
 
-4. Use the predictions from 3) (called out-of-folds predictions) as the inputs, and the correct responses (target variable) as the outputs to train a higher level learner called meta-model.
+Test these base models on the second part (holdout)
+
+Use the predictions from 3) (called out-of-folds predictions) as the inputs, and the correct responses (target variable) as the outputs to train a higher level learner called meta-model.
 
 
 
